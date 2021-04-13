@@ -13,8 +13,18 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
+                        @include('layouts.message')
                     {{ __('You are logged in!') }}
+                    <div>
+                        <h3>Update Profile Picture</h3>
+                        <div>
+                            <form action="/upload" method="POST" enctype="multipart/form-data">
+                                @csrf
+                                <input type="file" name="passport" > 
+                                <input type="submit" value="Upload" class="btn btn-info">
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

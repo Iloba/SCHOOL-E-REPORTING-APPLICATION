@@ -55,6 +55,18 @@
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
+
+                                    @if (Auth::user()->avatar)
+
+                                    <img width="40" class="img-fluid rounded" src="{{asset('/storage/passports'.Auth::user()->avatar)}}" alt="Avatar">
+                                
+                                    @endif
+
+
+
+
+
+
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
