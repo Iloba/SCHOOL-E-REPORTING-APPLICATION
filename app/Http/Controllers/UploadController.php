@@ -11,7 +11,7 @@ use auth;
 use App\Models\User;
 
 //To Store, Use the Storage Facade
-use illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Storage;
 
 class UploadController extends Controller
 {
@@ -25,13 +25,16 @@ class UploadController extends Controller
         $filename = $req->passport->getClientOriginalName();
 
 
-        //Prefix name with Passport
+        //Delete Previously Uploaded Image
+        $this->deleteOldPassport();
+
+        //Get The Image Name without Extension
         $newName = pathinfo($filename, PATHINFO_FILENAME);
 
         //get Extension
         $extension = pathinfo($filename, PATHINFO_EXTENSION);
 
-        //PrefixedName
+        //Add Prefix to name
         $prefixedName = $newName.'_Passport.'.$extension;
 
         // dd($prefixedName);
@@ -46,11 +49,14 @@ class UploadController extends Controller
         return redirect('home')->with('status', 'Profile Photo Updated');
 
     }
-        //if Not Suussful
-        return redirect('home')->with('error', 'Profile Photo Update Failed');
-    
+     //if Not Sucessful
+     return redirect('home')->with('error', 'Profile Photo Update Failed');
+    }
 
-
-
+    protected function deleteOldPassport(){
+        //Check if user already uploaded an image (Delete Old Image)
+        if(auth::user()->avatar){
+            Storage::delete('/public/passports/'.auth()->user()->avatar);
+        }
     }
 }

@@ -18,6 +18,9 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <!--icofont-->
+    <link rel="stylesheet" href="{{asset('icofont/icofont/icofont.min.css')}}">
 </head>
 <body>
     <div id="app">
@@ -58,14 +61,9 @@
 
                                     @if (Auth::user()->avatar)
 
-                                    <img width="40" class="img-fluid rounded" src="{{asset('/storage/passports'.Auth::user()->avatar)}}" alt="Avatar">
+                                    <img width="40" class="img-fluid rounded-circle" src="{{asset('storage/passports/'.Auth::user()->avatar)}}" alt="Avatar">
                                 
                                     @endif
-
-
-
-
-
 
                                 </a>
 

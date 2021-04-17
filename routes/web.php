@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 //import Controller
 use App\Http\Controllers\UploadController;
+use App\Http\Controllers\StudentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +16,9 @@ use App\Http\Controllers\UploadController;
 |
 */
 
+//Register Student Route
+Route::post('register', [StudentController::class, 'store'])->name('register');
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -24,6 +28,8 @@ Route::post('/upload', [UploadController::class, 'upload']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
 
 Auth::routes();
 
