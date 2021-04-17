@@ -50,7 +50,7 @@ class UploadController extends Controller
 
     }
      //if Not Sucessful
-     return redirect('home')->with('error', 'Profile Photo Update Failed');
+     return redirect('home')->with('error', 'Please Select Photo');
     }
 
     protected function deleteOldPassport(){

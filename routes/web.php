@@ -16,12 +16,14 @@ use App\Http\Controllers\StudentController;
 |
 */
 
-//Register Student Route
-Route::post('register', [StudentController::class, 'store'])->name('register');
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+//Register Student Route
+Route::post('/home/register', [StudentController::class, 'store'])->name('register_student');
 
 Route::post('/upload', [UploadController::class, 'upload']);
 
@@ -30,7 +32,3 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

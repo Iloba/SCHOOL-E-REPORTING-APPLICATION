@@ -35,6 +35,19 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
+
+        //Validate Form request
+        $validate = $request->validate([
+            'student_name' => 'required | min:5',
+            'student_passport' => 'required | mimes:jpg,png',
+            'student_age' => 'required | integer',
+            'student_class' => 'required | min:3',
+            'guardian_email' => 'required | Email'
+        ]);
+
+        //Store in Database
+
+
         //Store Student
         return $request->all();
     }
