@@ -19,7 +19,7 @@ class CreateStudentsTable extends Migration
             $table->string('passport_photograph'); //Student Passport
             $table->string('class'); //Student Class
             $table->integer('age'); //Student Age
-            $table->string('Guardian Email'); //Guardian's Email
+            $table->string('Guardian_email'); //Guardian's Email
             $table->text('report')->nullable();
             $table->timestamps();
             

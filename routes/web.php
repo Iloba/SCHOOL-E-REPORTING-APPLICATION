@@ -25,6 +25,15 @@ Route::get('/', function () {
 //Register Student Route
 Route::post('/home/register', [StudentController::class, 'store'])->name('register_student');
 
+//List of All Students
+Route::get('/home/students', [StudentController::class, 'index'])->name('students_list');
+
+//Get All Students Profile
+Route::get('/home/students/{id}', [StudentController::class, 'show'])->name('students_profile');
+
+//Edit Student
+Route::get('/home/students/{id}/edit', [StudentController::class, 'edit'])->name('edit');
+
 Route::post('/upload', [UploadController::class, 'upload']);
 
 Auth::routes();
