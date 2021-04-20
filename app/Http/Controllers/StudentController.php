@@ -127,10 +127,10 @@ class StudentController extends Controller
     public function edit(Student $id)
     {
         //Edit Student
-        $student = Student::find($id);
+        $students_data = Student::find($id);
 
         //return view
-        return view('edit-student')->with(['student'=> $student]);
+        return view('edit-student')->with(['students_data'=> $students_data]);
     }
 
     /**
@@ -140,9 +140,21 @@ class StudentController extends Controller
      * @param  \App\Models\Student  $student
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Student $student)
+    public function update(Request $request, $id)
     {
-        //
+        //update Studen Record
+       
+        //Validate
+        $validate = $request->validate([
+            'student_name' => 'required | min:5',
+            'student_passport' => 'required | mimes:jpg,png',
+            'student_age' => 'required | integer',
+            'student_class' => 'required | min:3',
+            'guardian_email' => 'required | Email'
+        ]);
+
+
+
     }
 
     /**

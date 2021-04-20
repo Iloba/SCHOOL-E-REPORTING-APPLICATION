@@ -34,6 +34,9 @@ Route::get('/home/students/{id}', [StudentController::class, 'show'])->name('stu
 //Edit Student
 Route::get('/home/students/{id}/edit', [StudentController::class, 'edit'])->name('edit');
 
+//Update Student
+Route::patch('/home/students/{id}/update', [StudentController::class, 'update'])->name('update');;
+
 Route::post('/upload', [UploadController::class, 'upload']);
 
 Auth::routes();
