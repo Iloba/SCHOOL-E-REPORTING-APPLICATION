@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Auth;
 
 use App\Models\Student;
 use Illuminate\Http\Request;
@@ -19,9 +20,9 @@ class StudentController extends Controller
     {
 
 
-        //Get all the List of Students
+        //Get all the List of Students for Specific User
 
-        $student = Student::paginate(5);
+        $student = auth()->user()->students()->orderBy('created_at', 'desc')->paginate(5);
 
        
         return view('students')->with('students', $student);
@@ -87,6 +88,7 @@ class StudentController extends Controller
         $student = new Student;
 
         $student->name = $request->student_name;
+        $student->user_id = Auth::user()->id;
         $student->passport_photograph = $prefixedName;
         $student->age = $request->student_age;
         $student->class = $request->student_class;

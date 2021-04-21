@@ -26,6 +26,7 @@
 
                                 <p class="mt-5"><i>Last Updated: {{$data->updated_at->diffForHumans()}}</i></p>
                             </div>
+                           
                             
                         </div>
                        @endforeach
@@ -36,8 +37,18 @@
                     </div>
                     
                 </div>
+                <div class="p-3">
+                    <form action="">
+                        <label for=""><b>Student Report</b></label>
+                        <textarea name="report" class="form-control" placeholder="Enter Student Report" id="" cols="30" rows="10"></textarea> <br>
+                        <input type="submit" class="btn btn-success" value="Send Report to Parent">
+                    </form>
+                </div>
             </div>
+            
         </div>
+        
     </div>
+    
 </div>
 @endsection

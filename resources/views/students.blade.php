@@ -11,24 +11,26 @@
                     
                     <div class="p-4">
                         <a class="btn btn-primary mb-5" href="{{route('home')}}"><i class="icofont-arrow-left"></i></a>
-                       <h3 class="pb-3">Here is the Lists of All Registered Students</h3>
+                      
                      
                        <div>
                           <ol>
-                            @foreach ($students as $student)
-                              <div style="display: flex;" class="p-2  justify-content-between">
-                               <div> 
-                                   <li> <a href="{{route('students_profile', $student->id)}}">
-                                        @if (strlen($student->name) > 10)
+                            @if (count($students) > 0)
+                             <h3 class="pb-3">Registered Students</h3>
+                                @foreach ($students as $student)
+                                <div style="display: flex;" class="p-2  justify-content-between">
+                                <div> 
+                                    <li> <a href="{{route('students_profile', $student->id)}}">
+                                        @if (strlen($student->name) >= 5)
 
-                                           {{substr($student->name, 0, 6). ' ...'}} 
+                                            {{substr($student->name, 0, 5). ' ...'}} 
 
                                         @else
 
                                         {{$student->name}}
 
                                         @endif
-                                         
+                                        
 
                                         </a> 
                                 </li>
@@ -50,8 +52,13 @@
                                         @method('delete')
                                     </form>
                                 </div>
-                              </div>
+                                </div>
                             @endforeach
+
+                            @else
+                                <p>You have not registered any student Yet</p>
+
+                            @endif
                             <div class="mt-2">
                                 {{$students->links()}}
                             </div>
