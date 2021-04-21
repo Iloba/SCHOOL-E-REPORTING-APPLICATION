@@ -10,7 +10,9 @@
                         @include('layouts.message')
                     
                     <div class="p-4">
+                        <a class="btn btn-primary mb-5" href="{{route('home')}}"><i class="icofont-arrow-left"></i></a>
                        <h3 class="pb-3">Here is the Lists of All Registered Students</h3>
+                     
                        <div>
                           <ol>
                             @foreach ($students as $student)
@@ -35,7 +37,18 @@
                                     <a class="btn btn-info" href="{{route('edit', $student->id)}}"><i class="icofont-edit"></i></a>
                                 </div>
                                 <div>
-                                    <a class="btn btn-danger" href=""><i class="icofont-trash"></i></a>
+                                    <a onclick="event.preventDefault();
+                                    if(confirm('This Action is Dangerous are you sure you want to continue??')){
+                                        document.getElementById('form-delete-{{$student->id}}').submit();
+                                    }
+                                    
+                                    
+                                    
+                                    " class="btn btn-danger" href="{{route('delete', $student->id)}}"><i class="icofont-trash"></i></a>
+                                    <form style="display:none;" id="{{'form-delete-'.$student->id}}" method="POST" action="{{route('delete', $student->id)}}">
+                                        @csrf
+                                        @method('delete')
+                                    </form>
                                 </div>
                               </div>
                             @endforeach
@@ -45,7 +58,7 @@
                           </ol>
                            
                        </div>
-                       <a class="btn btn-primary" href="{{route('home')}}">Return</a>
+                      
                     </div>
                 </div>
             </div>

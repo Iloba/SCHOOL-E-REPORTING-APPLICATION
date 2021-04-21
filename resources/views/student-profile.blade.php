@@ -10,6 +10,7 @@
                         @include('layouts.message')
                     
                     <div class="p-4">
+                        <a class="btn btn-primary mb-5" href="{{route('students_list')}}"><i class="icofont-arrow-left"></i></a>
                        <h3>Student Profile</h3>
                        @foreach ($student_data as $data)
                         <div class="container">   
@@ -23,7 +24,9 @@
                                 <h4><b>Class:</b> {{$data->class}}</h4>
                                 <h4><b>Guardian Email:</b> {{$data->Guardian_email}}</h4>
 
+                                <p class="mt-5"><i>Last Updated: {{$data->updated_at->diffForHumans()}}</i></p>
                             </div>
+                            
                         </div>
                        @endforeach
                       
@@ -31,7 +34,7 @@
                        </div>
                       
                     </div>
-                    <a class="btn btn-primary" href="{{route('students_list')}}">Return</a>
+                    
                 </div>
             </div>
         </div>
