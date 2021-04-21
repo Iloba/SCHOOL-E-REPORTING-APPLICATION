@@ -19,7 +19,7 @@
                                    <li> <a href="{{route('students_profile', $student->id)}}">
                                         @if (strlen($student->name) > 10)
 
-                                           {{substr($student->name, 0, 5). ' ...'}} 
+                                           {{substr($student->name, 0, 6). ' ...'}} 
 
                                         @else
 
@@ -39,9 +39,13 @@
                                 </div>
                               </div>
                             @endforeach
+                            <div class="mt-2">
+                                {{$students->links()}}
+                            </div>
                           </ol>
                            
                        </div>
+                       <a class="btn btn-primary" href="{{route('home')}}">Return</a>
                     </div>
                 </div>
             </div>

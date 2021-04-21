@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Student;
 use Illuminate\Http\Request;
 
+//To Store, Use the Storage Facade
+use Illuminate\Support\Facades\Storage;
+
 class StudentController extends Controller
 {
     /**
@@ -18,7 +21,7 @@ class StudentController extends Controller
 
         //Get all the List of Students
 
-        $student = Student::all();
+        $student = Student::paginate(5);
 
        
         return view('students')->with('students', $student);
@@ -93,7 +96,7 @@ class StudentController extends Controller
 
         //if Save is Successful
        if($student->save()){
-        return back()->with('status', 'Registration Successful');
+        return redirect(route('students_list'))->with('status', 'Registration Successful');
        }else{
            return back()->with('error', 'Registration Failed');
        }
@@ -140,9 +143,37 @@ class StudentController extends Controller
      * @param  \App\Models\Student  $student
      * @return \Illuminate\Http\Response
      */
+
+    //Delete Old Image
+   
+
+
+
     public function update(Request $request, $id)
     {
-        //update Studen Record
+        //update Student Record
+
+        //Upload Passport
+        //Check if file has Passport
+        if($request->hasFile('student_passport')){
+
+            //Get the Original name of the Pasport
+            $originalName = $request->student_passport->getClientOriginalName();
+
+            //Get the Name of the File without Extension
+            $newName = pathinfo($originalName, PATHINFO_FILENAME);
+
+            //Get the Extension of the File
+            $extension = pathinfo($originalName, PATHINFO_EXTENSION);
+
+            //Add Prefix to the name
+            $prefixedName = $newName.'_Passport.'.$extension;
+
+            //Store the Image
+            $request->student_passport->storeAs('students_passports', $prefixedName, 'public');
+
+            
+        }
        
         //Validate
         $validate = $request->validate([
@@ -153,9 +184,28 @@ class StudentController extends Controller
             'guardian_email' => 'required | Email'
         ]);
 
+        //update Student Record
+        $student = Student::find($id);
 
+         
+
+        $student->name = $request->student_name;
+        $student->passport_photograph = $prefixedName;
+        $student->age = $request->student_age;
+        $student->class = $request->student_class;
+        $student->Guardian_email = $request->guardian_email;
+
+        //Delete Previously Uploaded Image
+        // if(file_exists($request->passport_photograph)){
+        //    Storage::delete('/public/students_passports/'.$student->passport_photograph);
+        //   }
+
+        $student->save();
+
+          return redirect(route('students_profile', $student->id))->with('status', 'Record Successfully Updated');
 
     }
+
 
     /**
      * Remove the specified resource from storage.

@@ -29,7 +29,9 @@
                       
                        
                        </div>
+                      
                     </div>
+                    <a class="btn btn-primary" href="{{route('students_list')}}">Return</a>
                 </div>
             </div>
         </div>
