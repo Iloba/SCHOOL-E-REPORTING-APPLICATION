@@ -16,10 +16,7 @@ class RedirectToLogin
      */
     public function handle(Request $request, Closure $next)
     {
-        $emeka = 'hellos';
-        if($emeka != 'hello'){
-            return 'hey';
-        }
+    //   
         
         
         return $next($request);

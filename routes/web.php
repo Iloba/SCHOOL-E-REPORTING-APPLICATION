@@ -37,7 +37,7 @@ Route::get('/home/students/{id}', [StudentController::class, 'show'])->name('stu
 Route::get('/home/students/{id}/edit', [StudentController::class, 'edit'])->name('edit');
 
 //Delete Student
-Route::delete('/home/students/{id}/delete', [StudentController::class, 'destroy'])->name('delete');
+Route::any('/home/students/{id}/delete', [StudentController::class, 'destroy'])->name('delete');
 
 //Update Student
 Route::any('/home/students/{id}/update', [StudentController::class, 'update'])->name('update');;
