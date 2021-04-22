@@ -42,7 +42,7 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    //Relationship
+    //Relationship One to Many
     public function students(){
         return $this->hasMany(Student::class);
     }

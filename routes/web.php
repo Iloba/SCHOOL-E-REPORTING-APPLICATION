@@ -21,9 +21,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Auth::routes();
 
 //Register Student Route
-Route::post('/home/register', [StudentController::class, 'store'])->name('register_student');
+Route::match(['Get', 'Post'], '/home/register', [StudentController::class, 'store'])->name('register_student');
+
 
 //List of All Students
 Route::get('/home/students', [StudentController::class, 'index'])->name('students_list');
@@ -38,12 +40,13 @@ Route::get('/home/students/{id}/edit', [StudentController::class, 'edit'])->name
 Route::delete('/home/students/{id}/delete', [StudentController::class, 'destroy'])->name('delete');
 
 //Update Student
-Route::patch('/home/students/{id}/update', [StudentController::class, 'update'])->name('update');;
+Route::any('/home/students/{id}/update', [StudentController::class, 'update'])->name('update');;
 
-Route::post('/upload', [UploadController::class, 'upload']);
+Route::match(['get', 'post'], '/upload', [UploadController::class, 'upload'])->middleware('redirect');
 
-Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
 
 

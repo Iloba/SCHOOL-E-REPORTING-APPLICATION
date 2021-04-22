@@ -15,6 +15,12 @@ use Illuminate\Support\Facades\Storage;
 
 class UploadController extends Controller
 {
+
+    //Middleware
+    // public function __construct(){
+    //     $this->middleware('auth');
+    // }
+
     //Upload Function
     public function upload(Request $req){
      

@@ -15,7 +15,15 @@ class StudentController extends Controller
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
+     * 
+     * 
      */
+
+     //Apply Middleware
+     public function __construct(){
+         $this->middleware('auth');
+     }
+     
     public function index()
     {
 
