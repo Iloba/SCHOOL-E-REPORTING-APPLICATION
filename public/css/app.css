@@ -10902,5 +10902,18 @@ a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
-
-
+#nav-btn{
+  border-radius: 19px;
+  background-color: transparent;
+  color: rgb(2, 116, 2);
+  border: 2px solid green;
+}
+#nav-btn:hover{
+  background-color: green;
+  color: #fff;
+  border: 2px solid #fff;
+  transition: 0.6s ease-in-out;
+}
+.logo{
+  width: 50%;
+}

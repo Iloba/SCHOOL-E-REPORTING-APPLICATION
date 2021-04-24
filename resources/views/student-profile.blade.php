@@ -38,7 +38,8 @@
                     
                 </div>
                 <div class="p-3">
-                    <form action="">
+                    <form action="{{route('report', $data->id)}}" method="POST">
+                        @csrf
                         <label for=""><b>Student Report</b></label>
                         <textarea name="report" class="form-control" placeholder="Enter Student Report" id="" cols="30" rows="10"></textarea> <br>
                         <input type="submit" class="btn btn-success" value="Send Report to Parent">

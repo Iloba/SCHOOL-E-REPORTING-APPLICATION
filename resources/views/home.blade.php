@@ -11,7 +11,7 @@
                         @include('layouts.message')
                     
                     <div class="p-4">
-                        <h3>Update Profile Picture</h3>
+                        <h5><b><i>Update User Profile Picture</i></b></h5>
                         <div>
                             <form action="/upload" method="POST" enctype="multipart/form-data">
                                 @csrf

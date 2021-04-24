@@ -21,13 +21,15 @@
 
     <!--icofont-->
     <link rel="stylesheet" href="{{asset('icofont/icofont/icofont.min.css')}}">
+
+    <link rel="icon" href="{{asset('/img/e-fav.png')}}">
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    <img class="img-fluid logo" src="{{asset('/img/e-logo.png')}}" alt="E-report">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>

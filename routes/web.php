@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 //import Controller
 use App\Http\Controllers\UploadController;
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\reportController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +26,11 @@ Auth::routes();
 
 //Register Student Route
 Route::match(['Get', 'Post'], '/home/register', [StudentController::class, 'store'])->name('register_student');
+
+
+
+//Update Report and Send to Parents
+Route::any('/home/register/{id}/report', [reportController::class, 'sendreport'])->name('report');
 
 
 //List of All Students
