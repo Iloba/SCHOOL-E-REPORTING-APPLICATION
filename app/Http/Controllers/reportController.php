@@ -6,6 +6,8 @@ namespace App\Http\Controllers;
 use App\Models\Student;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ReportMail;
 
 class reportController extends Controller
 {
@@ -24,10 +26,11 @@ class reportController extends Controller
         //Get Parents Email
        $parent_email = $student->Guardian_email;
        
-       dd($parent_email);
-
-
-
+    
         //Send to Parents Email
+        Mail::to($parent_email)->send(new ReportMail($student->report));
+
+        return redirect()->back()->with('status', 'Operation Successful, Report Sent to Parent');
+        
     }
 }
