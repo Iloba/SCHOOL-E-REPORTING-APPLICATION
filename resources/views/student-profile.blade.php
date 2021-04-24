@@ -26,16 +26,10 @@
 
                                 <p class="mt-5"><i>Last Updated: {{$data->updated_at->diffForHumans()}}</i></p>
                             </div>
-                           
-                            
                         </div>
                        @endforeach
-                      
-                       
                        </div>
-                      
                     </div>
-                    
                 </div>
                 <div class="p-3">
                     <form action="{{route('report', $data->id)}}" method="POST">
