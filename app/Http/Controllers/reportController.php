@@ -30,7 +30,7 @@ class reportController extends Controller
         //Send to Parents Email
         Mail::to($parent_email)->send(new ReportMail($student->report));
 
-        return redirect()->back()->with('status', 'Operation Successful, Report Sent to Parent');
+        return redirect()->back()->with('status', 'Operation Successful, Report Sent to Parent Email Address ');
         
     }
 }
