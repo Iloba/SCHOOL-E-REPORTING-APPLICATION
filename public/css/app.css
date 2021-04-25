@@ -10903,17 +10903,21 @@ a.text-dark:focus {
   }
 }
 #nav-btn{
-  border-radius: 19px;
-  background-color: transparent;
-  color: rgb(2, 116, 2);
+  border-radius: 20px;
+  background-color: rgba(5, 78, 5, 0.712);
+  color: #fff;
   border: 2px solid green;
 }
 #nav-btn:hover{
-  background-color: green;
+  background-color: rgb(3, 92, 3);
   color: #fff;
   border: 2px solid #fff;
-  transition: 0.6s ease-in-out;
+  transition: 0.3s ease-in-out;
+  box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
 }
 .logo{
   width: 50%;
+   
 }
