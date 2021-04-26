@@ -14,6 +14,14 @@ class reportController extends Controller
 {
     //Send Report
     public function sendreport(Request $request, $id){
+
+        //Validate form
+        $request->validate([
+            'report' => 'required'
+        ]);
+
+
+
         $student = Student::find($id);
 
         //Update the Report Field
