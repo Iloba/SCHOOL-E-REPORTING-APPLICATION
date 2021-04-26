@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 24, 2021 at 03:25 AM
+-- Generation Time: Apr 26, 2021 at 05:00 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -81,9 +81,12 @@ CREATE TABLE `students` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `user_id` bigint(20) UNSIGNED NOT NULL,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `gender` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `school` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `passport_photograph` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `class` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `age` int(11) NOT NULL,
+  `Guardian_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `Guardian_email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `report` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
@@ -94,11 +97,8 @@ CREATE TABLE `students` (
 -- Dumping data for table `students`
 --
 
-INSERT INTO `students` (`id`, `user_id`, `name`, `passport_photograph`, `class`, `age`, `Guardian_email`, `report`, `created_at`, `updated_at`) VALUES
-(6, 3, 'Musa Musa', '1605095891_Passport.jpg', 'SS3k', 12, 'paulanwoh@gmail.com', 'Good Student', '2021-04-22 13:15:31', '2021-04-23 22:25:54'),
-(7, 3, 'Khalid Musa', 'DSC_2757 copy_Passport.jpg', 'Nursery 1', 12, 'holy@gmail.com', NULL, '2021-04-22 13:16:10', '2021-04-22 13:16:10'),
-(9, 2, 'Gee Gee', 'IMG-20210210-WA0002_Passport.jpg', 'SS1', 12, 'musa@gmail.com', NULL, '2021-04-22 13:18:18', '2021-04-22 13:18:18'),
-(10, 1, 'Jude Kabir', 'chidoka drivers institute_Passport.PNG', 'SS3', 12, 'jude@gmail.com', 'You Eh', '2021-04-22 14:05:30', '2021-04-23 14:52:25');
+INSERT INTO `students` (`id`, `user_id`, `name`, `gender`, `school`, `passport_photograph`, `class`, `age`, `Guardian_name`, `Guardian_email`, `report`, `created_at`, `updated_at`) VALUES
+(1, 1, 'Musa Musa', 'Male', 'FGC Kaduna', 'pass_Passport.jpg', 'SS3K', 15, 'Mr Musa', 'scarlettsney@gmail.com', 'fdvfv', '2021-04-26 12:38:58', '2021-04-26 13:58:45');
 
 -- --------------------------------------------------------
 
@@ -123,9 +123,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `avatar`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Emeka Iloba', 'scarlettsney@gmail.com', NULL, NULL, '$2y$10$qJl5Z9OgxlmjauMB/5pg9OTfnnnovv6HXRfTorvKXFmEKDUErJaIi', NULL, '2021-04-21 13:41:21', '2021-04-21 13:41:21'),
-(2, 'Timothy Iloba', 'ilobatimothy@gmail.com', NULL, NULL, '$2y$10$OFMgREkGc2ywFtsGzYWNauxXaBL2uIUvdrjfW8Pa/SYd1VEqab3TG', NULL, '2021-04-21 13:41:57', '2021-04-21 13:41:57'),
-(3, 'Sney', 'Sney@gmail.com', NULL, '1605095891_Passport.jpg', '$2y$10$w/2QdzQ/WjbWhBmHV0/XyeDFweorIUko5tHCsZ5cktP7wo9hDCvfe', NULL, '2021-04-21 13:58:22', '2021-04-21 13:59:04');
+(1, 'Emeka Iloba', 'scarlettsney@gmail.com', NULL, NULL, '$2y$10$1LI5t1CanLmz571OidbYxODzXmVWtXkjEJaaTqx255K4PTuxRHVtu', NULL, '2021-04-26 12:38:32', '2021-04-26 12:38:32');
 
 --
 -- Indexes for dumped tables
@@ -184,13 +182,13 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `students`
 --
 ALTER TABLE `students`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Constraints for dumped tables

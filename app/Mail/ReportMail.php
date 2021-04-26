@@ -36,7 +36,8 @@ class ReportMail extends Mailable
      * @return $this
      */
     public function build()
-    {
+    {   
+      
         return 
         $this->from('info@ereporting.com')->view('emails.report');
     } 
