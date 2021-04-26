@@ -32,6 +32,9 @@
                     </div>
                 </div>
                 <div class="p-3">
+                    <i class="text-success"><b>Kindly Type report Below and Send to Parent</b></i>
+                </div>
+                <div class="p-3">
                     <form action="{{route('report', $data->id)}}" method="POST">
                         @csrf
                         <label for=""><b>Student Report</b></label>
