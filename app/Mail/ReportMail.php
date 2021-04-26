@@ -7,19 +7,27 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use App\Models\Student;
+use App\Http\Controllers\reportController;
+use Illuminate\Http\Request;
 
 class ReportMail extends Mailable
 {
     use Queueable, SerializesModels;
-    // protected $student = Student;
+    public $student;
+
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($student)
     {   
-        // $this->student = $student;
+        $this->student = $student;
+        
+        // dd($this->student);
+       
+
+        
     }
 
     /**

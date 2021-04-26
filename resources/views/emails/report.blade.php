@@ -1,6 +1,13 @@
-<img  src="{{$message->embed('./img/e-logo.png')}}" alt="Welcome">
-<h3>Welcome to E-report</h3>
-<h4>Please Find Below, The School Report of your Ward</h4>
+@foreach ($student as $stud)
+<img  src="{{$message->embed('./img/e-logo.png')}}" alt="E-Report">
+<h3>E-report is here to help you track your kids academic performance</h3>
+<h4>Please Find Below, The School Report of your Ward <b>{{$stud->name}}</b> in class <b>{{$stud->class}}</b></h4>
+<img src="{{$message->embed('./storage/students_passports/'.$stud->passport_photograph)}}" alt="{{$stud->name}}">
 <p>
-    <p>report: Mr David, Your Child has been Performing greatly in School</p>
-</p>
+    <p><b>Report</b>: {{$stud->report}}</p>
+</p>  
+
+@endforeach
+
+
+

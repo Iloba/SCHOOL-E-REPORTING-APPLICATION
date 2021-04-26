@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UploadController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\reportController;
+use App\Mail\ReportMail;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,6 +32,7 @@ Route::match(['Get', 'Post'], '/home/register', [StudentController::class, 'stor
 
 //Update Report and Send to Parents
 Route::any('/home/register/{id}/report', [reportController::class, 'sendreport'])->name('report');
+
 
 
 //List of All Students

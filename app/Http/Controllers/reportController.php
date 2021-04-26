@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ReportMail;
 
+
 class reportController extends Controller
 {
     //Send Report
@@ -18,17 +19,21 @@ class reportController extends Controller
         //Update the Report Field
         $student->report = $request->report;
 
+       
+
         $student->save();
 
-        //Send Report to Parents Email;
+        
 
+        //Send Report to Parents Email;
+       
 
         //Get Parents Email
        $parent_email = $student->Guardian_email;
        
     
         //Send to Parents Email
-        Mail::to($parent_email)->send(new ReportMail($student->report));
+        Mail::to($parent_email)->send(new ReportMail(['students' => $student]));
 
         return redirect()->back()->with('status', 'Operation Successful, Report Sent to Parent Email Address ');
         
