@@ -11,18 +11,20 @@
                     
                     <div class="p-4">
                         <a class="btn btn-primary mb-5" href="{{route('students_list')}}"><i class="icofont-arrow-left"></i></a>
-                       <h3>Student Profile</h3>
+                       <h3 class="mb-2">Student Profile</h3>
                        @foreach ($student_data as $data)
                         <div class="container">   
                             <div class="row">
                             <div class="col-md-4">
                                 <img class="img-fluid" style="height: 200px;" src="{{asset('/storage/students_passports/'.$data->passport_photograph)}}" alt="Profile Photo">
                             </div>
-                            <div class="col-md-8">
-                                <h4><b>Name:</b> {{$data->name}}</h4>
-                                <h4><b>Age:</b> {{$data->age}}</h4>
-                                <h4><b>Class:</b> {{$data->class}}</h4>
-                                <h4><b>Guardian Email:</b> {{$data->Guardian_email}}</h4>
+                            <div class="col-md-8 p-1">
+                                <h5><b>Name:</b> {{$data->name}}</h5>
+                                <h5><b>School:</b> {{$data->school}}</h5>
+                                <h5><b>Age:</b> {{$data->age}}</h5>
+                                <h5><b>Gender:</b> {{$data->gender}}</h5>
+                                <h5><b>Class:</b> {{$data->class}}</h5>
+                                <h5><b>Guardian Email:</b> {{$data->Guardian_email}}</h5>
 
                                 <p class="mt-5"><i>Last Updated: {{$data->updated_at->diffForHumans()}}</i></p>
                             </div>

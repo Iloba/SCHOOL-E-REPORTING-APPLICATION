@@ -86,9 +86,12 @@ class StudentController extends Controller
         //Validate Form request
         $validate = $request->validate([
             'student_name' => 'required | min:5',
+            'gender' => 'required | not_in:0',
+            'student_school' => 'required | min:5',
             'student_passport' => 'required | mimes:jpg,png',
             'student_age' => 'required | integer',
             'student_class' => 'required | min:3',
+            'guardian_name' => 'required | min:5',
             'guardian_email' => 'required | Email'
         ]);
 
@@ -96,10 +99,13 @@ class StudentController extends Controller
         $student = new Student;
 
         $student->name = $request->student_name;
+        $student->gender = $request->gender;
+        $student->school = $request->student_school;
         $student->user_id = Auth::user()->id;
         $student->passport_photograph = $prefixedName;
         $student->age = $request->student_age;
         $student->class = $request->student_class;
+        $student->Guardian_name = $request->guardian_name;
         $student->Guardian_email = $request->guardian_email;
 
         $student->save();
