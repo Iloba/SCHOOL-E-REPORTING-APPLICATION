@@ -1,11 +1,8 @@
 @extends('layouts.email')
 @section('content')
 @foreach ($student as $stud)
-   <div style="font-family: 'nunito sans', sans-serif;">
-        <img width="20%"  src="{{$message->embed('./img/e-logo.png')}}" alt="E-Report">
-        <div style="background: rgb(50, 124, 0); color: #fff; padding: 10px;">
-            <h3 style="">E-report is here to help you track your kids academic performance</h3>
-        </div>
+   <div style="font-family: 'nunito sans', sans-serif; background: rgb(243, 243, 243); padding: 15px;">
+        <img style="width: 100%;" src="{{$message->embed('./img/email-head.jpg')}}" alt="E-Report">
         <h3>Good day {{$stud->Guardian_name}}, </h3>
         <h4>Please Find Below, The School Report of your Ward  <b style="color: rgb(104, 5, 104);">{{$stud->name}} (<small>{{$stud->class}}</small>)</b> <br> in {{$stud->school}} 
         <br></h4>
