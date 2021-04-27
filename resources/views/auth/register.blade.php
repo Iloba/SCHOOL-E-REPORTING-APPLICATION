@@ -5,7 +5,13 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+                <div class="card-header">
+                    <img width="50%;" class="img-fluid mx-auto d-block pt-2" src="{{asset('./img/e-logo.png')}}" alt="E-report">
+                    <div>
+                        <h3 class="text-center mt-2">{{ __('Register') }}</h3>
+                    </div>
+                   
+                </div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
