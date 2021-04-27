@@ -10912,6 +10912,7 @@ a.text-dark:focus {
 #nav-btn:hover{
   background-color: rgb(3, 92, 3);
   color: #fff;
+  padding: 10px;
   border: 2px solid #fff;
   transition: 0.3s ease-in-out;
   box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
@@ -10921,5 +10922,15 @@ a.text-dark:focus {
 .logo{
   width: 50%;
    
+}
+@media screen and (max-width: 600px) {
+  .nav-item{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #nav-btn{
+    width: 50%;
+   
+  }
 }
 
