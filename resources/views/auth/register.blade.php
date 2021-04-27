@@ -3,10 +3,10 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-6">
             <div class="card">
                 <div class="card-header">
-                    <img width="50%;" class="img-fluid mx-auto d-block pt-2" src="{{asset('./img/e-logo.png')}}" alt="E-report">
+                    <img width="36%;" class="img-fluid mx-auto d-block pt-2" src="{{asset('./img/e-logo.png')}}" alt="E-report">
                     <div>
                         <h3 class="text-center mt-2">{{ __('Register') }}</h3>
                     </div>
@@ -69,7 +69,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-success">
                                     {{ __('Register') }}
                                 </button>
                             </div>
