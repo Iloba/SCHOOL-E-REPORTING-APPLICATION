@@ -21,6 +21,7 @@
 
     <!--icofont-->
     <link rel="stylesheet" href="{{asset('icofont/icofont/icofont.min.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
     <link rel="icon" href="{{asset('/img/e-fav.png')}}">
 </head>
@@ -89,8 +90,90 @@
                 </div>
             </div>
         </nav>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{{asset('./img/slider.jpg')}}" class="d-block w-100" alt="E-report">
+              </div>
+              <div class="carousel-item">
+                <img src="{{asset('./img/slider.jpg')}}" class="d-block w-100" alt="E-report">
+              </div>
+              <div class="carousel-item">
+                <img src="{{asset('./img/slider.jpg')}}" class="d-block w-100" alt="E-report">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         <div class="section-one">
-
+            <div class="container ">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <h1 class="text-center">Send reports faster</h1>
+                        <h3 class="text-center mt-2">The ease & simplicity of E-report, wherever you are.</h3>
+                        <div class="mt-3">
+                            <a style="width: 50%;" id="nav-btn" class="btn btn-info mx-auto d-block" href="{{route('register')}}">Get Started Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-two">
+            <img class="img-fluid" src="{{asset('./img/gmail.png')}}" alt="E-report">
+        </div>
+        <div class="section-three">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <div class="card shadow">
+                                <img class="img-fluid" src="{{asset('./img/slider.jpg')}}" alt="E-report">
+                                <div class="card-body">
+                                    <h5 class="card-title">card Title</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, laboriosam necessitatibus tenetur labore soluta ipsum doloribus quibusdam voluptatum vel eaque 
+                                        itaque sed repellendus, quam recusandae nam iure, illo earum accusamus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card shadow">
+                                <img class="img-fluid" src="{{asset('./img/slider.jpg')}}" alt="E-report">
+                                <div class="card-body">
+                                    <h5 class="card-title">card Title</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, laboriosam necessitatibus tenetur labore soluta ipsum doloribus quibusdam voluptatum vel eaque 
+                                        itaque sed repellendus, quam recusandae nam iure, illo earum accusamus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-four">
+           <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <img id="logo-down" class="img-fluid mx-auto d-block" src="{{asset('./img/e-logo.png')}}" alt="">
+                        <h1 class="text-center mt-3">Get started with E-report</h1>
+                        <div class="mt-3">
+                            <a style="width: 50%;" id="nav-btn" class="btn btn-info mx-auto d-block" href="{{route('register')}}">Create an Account</a>
+                        </div>
+                    </div>
+                </div>
+           </div>
         </div>
 
        

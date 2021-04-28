@@ -10932,5 +10932,31 @@ a.text-dark:focus {
     width: 50%;
    
   }
+  .section-four{
+    margin: 10px;
+    padding: 10px;
+  }
 }
-
+.section-one{
+  height: auto;
+  padding: 80px;
+  font-family: "Nunito", sans-serif;
+}
+.section-two{
+  height: 100vh;
+  font-family: "Nunito", sans-serif;
+}
+.section-three{
+  padding: 30px;
+  background-color: rgb(241, 241, 241);
+}
+.section-four{
+  margin: 100px;
+  padding: 100px;
+}
+#logo-down{
+  width: 50%;
+}
+*{
+  font-family: "Nunito", sans-serif;
+}
