@@ -120,7 +120,7 @@
             <div class="container ">
                 <div class="row justify-content-center">
                     <div class="col-md-6">
-                        <h1 class="text-center">Send reports faster</h1>
+                        <h1 id="h1" class="text-center">Send reports faster</h1>
                         <h3 class="text-center mt-2">The ease & simplicity of E-report, wherever you are.</h3>
                         <div class="mt-3">
                             <a style="width: 50%;" id="nav-btn" class="btn btn-info mx-auto d-block" href="{{route('register')}}">Get Started Now</a>
@@ -167,7 +167,7 @@
                 <div class="row justify-content-center">
                     <div class="col-md-10">
                         <img id="logo-down" class="img-fluid mx-auto d-block" src="{{asset('./img/e-logo.png')}}" alt="E-report">
-                        <h1 class="text-center mt-3">Get started with E-report</h1>
+                        <h1 id="h1" class="text-center mt-3">Get started with e-report</h1>
                         <div class="mt-3">
                             <a style="width: 50%;" id="nav-btn" class="btn btn-info mx-auto d-block" href="{{route('register')}}">Create an Account</a>
                         </div>

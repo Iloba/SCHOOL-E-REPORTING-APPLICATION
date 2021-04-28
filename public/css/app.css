@@ -10903,6 +10903,12 @@ a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
+
+/*My css */
+*{
+  font-family: "Nunito", sans-serif;
+  box-sizing: border-box;
+}
 #nav-btn{
   border-radius:0px;
   background-color: rgba(5, 78, 5, 0.712);
@@ -10964,9 +10970,7 @@ a.text-dark:focus {
 #logo-down{
   width:170px;
 }
-*{
-  font-family: "Nunito", sans-serif;
-}
+
 footer{
   background-color: rgb(241, 241, 241);
   padding: 40px;
@@ -10974,4 +10978,10 @@ footer{
 }
 .footer-logo {
   width: 170px;
+}
+#h1{
+  font-weight: bold;
+  color: #202124;
+  -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility
 }
