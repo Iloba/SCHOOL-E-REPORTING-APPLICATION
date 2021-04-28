@@ -10911,7 +10911,7 @@ a.text-dark:focus {
 }
 #nav-btn{
   border-radius:0px;
-  background-color: rgba(5, 78, 5, 0.712);
+  background-color: #006600;
   color: #fff;
   border: 2px solid green;
 }
@@ -10956,8 +10956,8 @@ a.text-dark:focus {
   font-family: "Nunito", sans-serif;
 }
 .section-two{
-  height: 100vh;
   font-family: "Nunito", sans-serif;
+  padding: 40px;
 }
 .section-three{
   padding: 30px;

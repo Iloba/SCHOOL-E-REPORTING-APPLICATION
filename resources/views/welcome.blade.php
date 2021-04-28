@@ -169,7 +169,7 @@
                         <img id="logo-down" class="img-fluid mx-auto d-block" src="{{asset('./img/e-logo.png')}}" alt="E-report">
                         <h1 id="h1" class="text-center mt-3">Get started with e-report</h1>
                         <div class="mt-3">
-                            <a style="width: 50%;" id="nav-btn" class="btn btn-info mx-auto d-block" href="{{route('register')}}">Create an Account</a>
+                            <a id="nav-btn" class="btn btn-info mx-auto d-block" href="{{route('register')}}">Create an Account</a>
                         </div>
                     </div>
                 </div>
