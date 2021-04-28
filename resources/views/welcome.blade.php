@@ -166,7 +166,7 @@
            <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-10">
-                        <img id="logo-down" class="img-fluid mx-auto d-block" src="{{asset('./img/e-logo.png')}}" alt="">
+                        <img id="logo-down" class="img-fluid mx-auto d-block" src="{{asset('./img/e-logo.png')}}" alt="E-report">
                         <h1 class="text-center mt-3">Get started with E-report</h1>
                         <div class="mt-3">
                             <a style="width: 50%;" id="nav-btn" class="btn btn-info mx-auto d-block" href="{{route('register')}}">Create an Account</a>
@@ -175,6 +175,17 @@
                 </div>
            </div>
         </div>
+        <footer class="justify-content-center">
+            <a href="/"><img class="footer-logo img-fluid mx-auto d-block mb-2" src="{{asset('./img/e-logo.png')}}" alt="E-report"></a>
+            
+            <div class="d-flex justify-content-center">
+               <a class="nav-link text-secondary" href="#"> <i class="icofont-facebook"></i></a>
+               <a class="nav-link text-secondary" href="#"> <i class="icofont-instagram"></i></a>
+               <a class="nav-link text-secondary" href="#"> <i class="icofont-twitter"></i></a>
+               <a class="nav-link text-secondary" href="#"> <i class="icofont-linkedin"></i></a>
+            </div>
+            <p class="text-center mt-2">&copy; e-report 2021</p>
+        </footer>
 
        
     </div>
