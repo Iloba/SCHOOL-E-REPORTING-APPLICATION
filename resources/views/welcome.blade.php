@@ -130,7 +130,7 @@
             </div>
         </div>
         <div class="section-two">
-            <img class="img-fluid" src="{{asset('./img/gmail.png')}}" alt="E-report">
+            <img class="img-fluid" src="{{asset('./img/gmail.jpg')}}" alt="E-report">
         </div>
         <div class="section-three">
             <div class="container-fluid">
