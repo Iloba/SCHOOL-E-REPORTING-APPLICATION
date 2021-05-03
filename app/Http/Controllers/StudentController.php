@@ -126,7 +126,7 @@ class StudentController extends Controller
      * @param  \App\Models\Student  $student
      * @return \Illuminate\Http\Response
      */
-    public function show(Student $id)
+    public function show($id)
     {
         //return students Profile
         $student_data = Student::find($id);
