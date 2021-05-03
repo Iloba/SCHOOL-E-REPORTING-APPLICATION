@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="E-report is a web application that helps parents track their Ward's academic progress with ease.">
+    <meta name="author" content="Emeka Timothy Iloba. Fullstack Developer">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
