@@ -2127,7 +2127,7 @@ pre code {
   color: #0ef55b;
   background-color: #fff;
   background-clip: padding-box;
-  border: 2px solid #35d80c;
+  border: 1px solid #35d80c;
   border-radius: 0rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }

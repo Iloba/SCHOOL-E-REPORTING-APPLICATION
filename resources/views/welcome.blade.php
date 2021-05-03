@@ -98,7 +98,7 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="{{asset('./img/slider.jpg')}}" class="d-block w-100" alt="E-report">
+                <img src="{{asset('./img/e-banner.jpg')}}" class="d-block w-100" alt="E-report">
               </div>
               <div class="carousel-item">
                 <img src="{{asset('./img/slider.jpg')}}" class="d-block w-100" alt="E-report">
@@ -162,7 +162,7 @@
                 </div>
             </div>
         </div>
-        <div class="section-four">
+        {{-- <div class="section-four">
            <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-10">
@@ -174,8 +174,8 @@
                     </div>
                 </div>
            </div>
-        </div>
-        <footer class="justify-content-center">
+        </div> --}}
+        <footer class="justify-content-center shadow">
             <a href="/"><img class="footer-logo img-fluid mx-auto d-block mb-2" src="{{asset('./img/e-logo.png')}}" alt="E-report"></a>
             
             <div class="d-flex justify-content-center">

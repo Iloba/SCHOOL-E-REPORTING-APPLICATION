@@ -4,7 +4,7 @@
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-4">
-            <div class="card">
+            <div class="card shadow">
                 
                 <div class="card-header">
                     <img width="50%;" class="img-fluid mx-auto d-block pt-2" src="{{asset('./img/e-logo.png')}}" alt="E-report">
@@ -22,7 +22,7 @@
                             <label for=""><b>Username/Email</b></label> 
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">              
-                                      <span class="input-group-text" id="basic-addon1"><i class="icofont-ui-user"></i></span>
+                                      <span class="input-group-text bg-success text-light" id="basic-addon1"><i class="icofont-ui-user"></i></span>
                                     </div>  
                                     <input  id="email" type="email" name="email" class="form-control @error('email') is-invalid @enderror" placeholder="Username" value="{{old('email')}}" required autocomplete="email" autofocus aria-label="Student Name" aria-describedby="basic-addon1">
                                 </div>
@@ -41,7 +41,7 @@
                             <label for=""><b>Password</b></label> 
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">              
-                                  <span class="input-group-text" id="basic-addon1"><i class="icofont-lock"></i></span>
+                                  <span class="input-group-text bg-success text-light" id="basic-addon1"><i class="icofont-lock"></i></span>
                                 </div>  
                                 <input  id="password" type="password" name="password" class="form-control @error('password') is-invalid @enderror" placeholder="Password" required autocomplete="current-password" aria-label="Student Name" aria-describedby="basic-addon1">
                             </div>
