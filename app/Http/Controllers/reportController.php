@@ -20,7 +20,7 @@ class reportController extends Controller
         //Validate form
         $request->validate([
             'report' => 'required',
-            'report_file' => 'required'
+            'report_file' => 'required|mimes:pdf,docx,jpeg|max:10120'
         ]);
 
        
