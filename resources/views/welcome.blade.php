@@ -186,7 +186,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="card shadow">
-                                <img class="img-fluid" src="{{asset('./img/send-report.png')}}" alt="E-report">
+                                <img class="img-fluid" src="{{asset('./img/parent-mail.png')}}" alt="E-report">
                                 <div class="card-body">
                                     <h5 class="card-title"><b>Parents will recieve report in their email in no time</b></h5>
                                     <p class="card-text">
@@ -217,12 +217,14 @@
             <a href="/"><img class="footer-logo img-fluid mx-auto d-block mb-2" src="{{asset('./img/e-logo.png')}}" alt="E-report"></a>
             
             <div class="d-flex justify-content-center">
-               <a class="nav-link text-secondary" href="#"> <i class="icofont-facebook"></i></a>
-               <a class="nav-link text-secondary" href="#"> <i class="icofont-instagram"></i></a>
-               <a class="nav-link text-secondary" href="#"> <i class="icofont-twitter"></i></a>
-               <a class="nav-link text-secondary" href="#"> <i class="icofont-linkedin"></i></a>
+                <a target="_blank" class="nav-link text-secondary" href="https://twitter.com/e_schoolreport"> <i class="icofont-twitter"></i></a>
+               <a target="_blank" class="nav-link text-secondary" href="#"> <i class="icofont-facebook"></i></a>
+               <a target="_blank" class="nav-link text-secondary" href="#"> <i class="icofont-instagram"></i></a>
+               <a target="_blank" class="nav-link text-secondary" href="#"> <i class="icofont-linkedin"></i></a>
             </div>
-            <p class="text-center mt-2">&copy; e-report 2021</p>
+            <p class="text-center mt-2">&copy; e-report @php
+                echo date('Y');
+            @endphp</p>
         </footer>
 
        
