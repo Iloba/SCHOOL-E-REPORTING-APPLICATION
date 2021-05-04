@@ -122,8 +122,11 @@
             <div class="container ">
                 <div class="row justify-content-center">
                     <div class="col-md-6">
-                        <h1 id="h1" class="text-center">Send reports faster</h1>
-                        <h3 class="text-center mt-2">The ease & simplicity of E-report, wherever you are.</h3>
+                        <h1 id="h1" class="text-center">Send students report to parents electronically with ease</h1>
+                        <p class="text-center mt-2 line-h">E-report helps parents track their ward's academic progress digitally. No more use of the analog way of recieving reports. 
+                            Its a new era of recieving your ward's report electronically from the comfort of your mobile device. This process also reduces the cost of teachers printing out results(reports) and issuing to students.
+                            E-report is open for all Schools and institution.
+                        </p>
                         <div class="mt-3">
                             <a style="width: 50%;" id="nav-btn" class="btn btn-info mx-auto d-block" href="{{route('register')}}">Get Started Now</a>
                         </div>
