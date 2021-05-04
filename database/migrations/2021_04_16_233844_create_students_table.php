@@ -27,6 +27,7 @@ class CreateStudentsTable extends Migration
             $table->string('Guardian_name');
             $table->string('Guardian_email'); //Guardian's Email
             $table->text('report')->nullable();
+            $table->string('report_file')->nullable();
 
             
             $table->timestamps();

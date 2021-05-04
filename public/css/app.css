@@ -10985,3 +10985,6 @@ footer{
   -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility
 }
+ul li{
+  list-style-type: none;
+}

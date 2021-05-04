@@ -72,7 +72,7 @@ class StudentController extends Controller
             $extension = pathinfo($originalName, PATHINFO_EXTENSION);
 
             //Add Prefix to the name
-            $prefixedName = $newName.'_Passport.'.$extension;
+            $prefixedName = $request->student_name.'_Passport.'.$extension;
 
             //Store the Image
             $request->student_passport->storeAs('students_passports', $prefixedName, 'public');
@@ -183,7 +183,7 @@ class StudentController extends Controller
             $extension = pathinfo($originalName, PATHINFO_EXTENSION);
 
             //Add Prefix to the name
-            $prefixedName = $newName.'_Passport.'.$extension;
+            $prefixedName = $request->student_name.'_Passport.'.$extension;
 
             //Store the Image
             $request->student_passport->storeAs('students_passports', $prefixedName, 'public');

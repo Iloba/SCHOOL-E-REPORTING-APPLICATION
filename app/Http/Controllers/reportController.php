@@ -15,18 +15,53 @@ class reportController extends Controller
     //Send Report
     public function sendreport(Request $request, $id){
 
+       
+
         //Validate form
         $request->validate([
             'report' => 'required',
-            'report-file' => 'required'
+            'report_file' => 'required'
         ]);
 
-
+       
 
         $student = Student::find($id);
 
+
+          //Upload File
+          if($request->has('report_file')){
+
+            //Get the Original Name
+            $originalName = $request->report_file->getClientOriginalName();
+
+
+            //Get the name without Extension
+            $nameWithoutExt = pathinfo($originalName, PATHINFO_FILENAME);
+
+            
+
+            //Get Extension
+            $nameWithExt = pathinfo($originalName, PATHINFO_EXTENSION);
+
+
+            //Add Prefix
+            $prefixedName = $student->name.'_report_file.'.$nameWithExt;
+
+           
+            //Store
+            $request->report_file->storeAs('report-files', $prefixedName, 'public');
+
+            //Check if Upload is Successful
+        }
+
+
+        
+
+        //Store 
+
         //Update the Report Field
         $student->report = $request->report;
+        $student->report_file = $prefixedName;
 
        
 

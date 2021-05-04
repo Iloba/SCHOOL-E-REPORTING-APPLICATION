@@ -11,6 +11,7 @@
         <div class="row">
             <div class="col-md-6">
                 <img style="padding: 10px;" width="20%" src="{{$message->embed('./storage/students_passports/'.$stud->passport_photograph)}}" alt="{{$stud->name}}">
+                <div></div>
             </div>
             <div class="col-md-6">
                 <div class="card">
