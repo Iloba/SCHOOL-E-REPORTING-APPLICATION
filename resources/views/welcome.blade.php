@@ -143,8 +143,9 @@
                                 <img class="img-fluid" src="{{asset('./img/register-student.png')}}" alt="E-report">
                                 <div class="card-body">
                                     <h5 class="card-title"><b>Signup Students as a Teacher</b></h5>
-                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, laboriosam necessitatibus tenetur labore soluta ipsum doloribus quibusdam voluptatum vel eaque 
-                                        itaque sed repellendus, quam recusandae nam iure, illo earum accusamus.
+                                    <p class="card-text">
+                                        After Succesful registration as a teacher, you can easily register your students.
+                                         Data like Student Name, Class, Gender, Age, Parent Name, Parent Email Address will be required when registering a new Student. 
                                     </p>
                                 </div>
                             </div>
@@ -154,8 +155,8 @@
                                 <img class="img-fluid" src="{{asset('./img/student-list.png')}}" alt="E-report">
                                 <div class="card-body">
                                     <h5 class="card-title"><b>Manage Registered Students with Ease</b></h5>
-                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, laboriosam necessitatibus tenetur labore soluta ipsum doloribus quibusdam voluptatum vel eaque 
-                                        itaque sed repellendus, quam recusandae nam iure, illo earum accusamus.
+                                    <p class="card-text">
+                                        As a Teacher registered on e-report, you can manage your  Students easily. Features are available for Updating and Deletion of Student Data.
                                     </p>
                                 </div>
                             </div>
@@ -173,8 +174,9 @@
                                 <img class="img-fluid" src="{{asset('./img/send-report.png')}}" alt="E-report">
                                 <div class="card-body">
                                     <h5 class="card-title"><b>Send Report to Parent's Mail on a Single Click</b></h5>
-                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, laboriosam necessitatibus tenetur labore soluta ipsum doloribus quibusdam voluptatum vel eaque 
-                                        itaque sed repellendus, quam recusandae nam iure, illo earum accusamus.
+                                    <p class="card-text">
+                                        As a teacher, you can send reports to each of your registered student's  parent individually, Attach report files and add a backup message for parents.
+                                        Parents will be able to recieve reports in their mail boxes. 
                                     </p>
                                 </div>
                             </div>
@@ -184,8 +186,9 @@
                                 <img class="img-fluid" src="{{asset('./img/send-report.png')}}" alt="E-report">
                                 <div class="card-body">
                                     <h5 class="card-title"><b>Parents will recieve Report in their Email in No Time</b></h5>
-                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, laboriosam necessitatibus tenetur labore soluta ipsum doloribus quibusdam voluptatum vel eaque 
-                                        itaque sed repellendus, quam recusandae nam iure, illo earum accusamus.
+                                    <p class="card-text">
+                                        Parents will be able to recieve reports from school teachers from the comfort of thier mobile devices or computers through their Email Addresses (Mail Boxes)
+                                        and they will be able to track their ward's academic progress with ease.
                                     </p>
                                 </div>
                             </div>
