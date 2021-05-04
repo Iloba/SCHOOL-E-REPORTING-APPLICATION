@@ -140,9 +140,9 @@
                     <div class="row mt-3">
                         <div class="col-md-6">
                             <div class="card shadow">
-                                <img class="img-fluid" src="{{asset('./img/slider.jpg')}}" alt="E-report">
+                                <img class="img-fluid" src="{{asset('./img/register-student.png')}}" alt="E-report">
                                 <div class="card-body">
-                                    <h5 class="card-title">card Title</h5>
+                                    <h5 class="card-title"><b>Signup Students as a Teacher</b></h5>
                                     <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, laboriosam necessitatibus tenetur labore soluta ipsum doloribus quibusdam voluptatum vel eaque 
                                         itaque sed repellendus, quam recusandae nam iure, illo earum accusamus.
                                     </p>
@@ -151,9 +151,39 @@
                         </div>
                         <div class="col-md-6">
                             <div class="card shadow">
-                                <img class="img-fluid" src="{{asset('./img/slider.jpg')}}" alt="E-report">
+                                <img class="img-fluid" src="{{asset('./img/student-list.png')}}" alt="E-report">
                                 <div class="card-body">
-                                    <h5 class="card-title">card Title</h5>
+                                    <h5 class="card-title"><b>Manage Registered Students with Ease</b></h5>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, laboriosam necessitatibus tenetur labore soluta ipsum doloribus quibusdam voluptatum vel eaque 
+                                        itaque sed repellendus, quam recusandae nam iure, illo earum accusamus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-three">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <div class="card shadow">
+                                <img class="img-fluid" src="{{asset('./img/send-report.png')}}" alt="E-report">
+                                <div class="card-body">
+                                    <h5 class="card-title"><b>Send Report to Parent's Mail on a Single Click</b></h5>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, laboriosam necessitatibus tenetur labore soluta ipsum doloribus quibusdam voluptatum vel eaque 
+                                        itaque sed repellendus, quam recusandae nam iure, illo earum accusamus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card shadow">
+                                <img class="img-fluid" src="{{asset('./img/send-report.png')}}" alt="E-report">
+                                <div class="card-body">
+                                    <h5 class="card-title"><b>Parents will recieve Report in their Email in No Time</b></h5>
                                     <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, laboriosam necessitatibus tenetur labore soluta ipsum doloribus quibusdam voluptatum vel eaque 
                                         itaque sed repellendus, quam recusandae nam iure, illo earum accusamus.
                                     </p>

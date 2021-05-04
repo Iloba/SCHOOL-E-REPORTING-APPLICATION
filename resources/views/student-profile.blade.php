@@ -35,10 +35,12 @@
                     <i class="text-success"><b>Kindly Type report Below and Send to Parent</b></i>
                 </div>
                 <div class="p-3">
-                    <form action="{{route('report', $student_data->id)}}" method="POST">
+                    <form action="{{route('report', $student_data->id)}}" method="POST" enctype="multipart/form-data">
                         @csrf
-                        <label for=""><b>Student Report</b></label>
-                        <textarea name="report" class="form-control" placeholder="Enter Student Report" required id="" cols="30" rows="10"></textarea> <br>
+                        <label for="student-report"><b>Student Report</b></label>
+                        <textarea name="report" class="form-control" placeholder="Enter Student Report" required id="" cols="30" rows="5"></textarea> <br>
+                        <label for="student-report-file"><b>Attach Student Report File</b></label>
+                        <input type="file" name="report-file" class="form-control"> <br>
                         <input type="submit" class="btn btn-success" value="Send Report to Parent">
                     </form>
                 </div>

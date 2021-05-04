@@ -17,7 +17,8 @@ class reportController extends Controller
 
         //Validate form
         $request->validate([
-            'report' => 'required'
+            'report' => 'required',
+            'report-file' => 'required'
         ]);
 
 
