@@ -27,7 +27,9 @@
 
     <link rel="icon" href="{{asset('/img/e-fav.png')}}">
 </head>
-<body>
+<body onload="preloaderFunction()">
+    <div id="loading"></div>
+
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm p-3">
             <div class="container">
@@ -226,8 +228,15 @@
                 echo date('Y');
             @endphp</p>
         </footer>
-
-       
     </div>
+<script>
+    var preloader = document.getElementById('loading');
+
+    function preloaderFunction(){
+        preloader.style.display = 'none';
+
+    }
+
+</script>
 </body>
 </html>
