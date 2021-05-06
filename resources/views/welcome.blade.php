@@ -24,8 +24,11 @@
     <!--icofont-->
     <link rel="stylesheet" href="{{asset('icofont/icofont/icofont.min.css')}}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="{{asset('/img/e-fav.png')}}">
+    
+   
+
 </head>
 <body onload="preloaderFunction()">
     <div id="loading"></div>
@@ -120,7 +123,7 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-        <div class="section-one">
+        <div class="section-one"  data-aos="fade-up" data-aos-duration="3000">
             <div class="container ">
                 <div class="row justify-content-center">
                     <div class="col-md-6">
@@ -229,6 +232,10 @@
             @endphp</p>
         </footer>
     </div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 <script>
     var preloader = document.getElementById('loading');
 
@@ -236,7 +243,6 @@
         preloader.style.display = 'none';
 
     }
-
 </script>
 </body>
 </html>
