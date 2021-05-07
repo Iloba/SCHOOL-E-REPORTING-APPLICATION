@@ -133,7 +133,7 @@
             <div class="container ">
                 <div class="row justify-content-center">
                     <div class="col-md-6">
-                        <h1 id="h1" class="text-center">Send students report to parents electronically with ease</h1>
+                        <h1 id="h1" class="text-center">Send students report electronically</h1>
                         <p class="text-center mt-2 line-h">E-report helps parents track their ward's academic progress digitally. No more use of the analog way of recieving reports. 
                             Its a new era of recieving your ward's report electronically from the comfort of your mobile device. This process also reduces the cost of teachers printing out results(reports) and issuing to students.
                             E-report is open for all Schools and institution.
@@ -150,7 +150,7 @@
         </div>
         <div class="section-three">
             <div class="container-fluid">
-                <h1 class="text-center mb-2">Easy to Use</h1>
+                <h1 class="text-center mb-2">Get started with ease</h1>
                 <div class="container">
                     <div class="row mt-3">
                         <div class="col-md-6">
