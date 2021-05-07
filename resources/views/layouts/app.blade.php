@@ -76,6 +76,10 @@
                                     <a class="dropdown-item" href="{{ route('students_list') }}">
                                         Students List
                                     </a>
+
+                                    <a class="dropdown-item" href="{{ route('edit-user-profile', Auth::user()->id) }}">
+                                        Edit my Profile
+                                    </a>
                                     
                                    
                                     <a class="dropdown-item" href="{{ route('logout') }}"

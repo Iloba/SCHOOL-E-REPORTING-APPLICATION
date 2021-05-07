@@ -32,11 +32,16 @@ Auth::routes();
 Route::match(['Get', 'Post'], '/home/register', [StudentController::class, 'store'])->name('register_student');
 
 
+//Edit User Profile
+Route::get('/home/{id}/edit', [HomeController::class, 'edit'])->name('edit-user-profile');
+
+//Update User Profile
+Route::post('/home/{id}/update', [HomeController::class, 'update'])->name('update-user');
+
+
 
 //Update Report and Send to Parents
 Route::any('/home/register/{id}/report', [reportController::class, 'sendreport'])->name('report');
-
-//Upd
 
 
 
