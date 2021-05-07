@@ -8,7 +8,7 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
+    <link rel="icon" href="{{asset('/img/e-fav.png')}}">
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
@@ -24,17 +24,16 @@
     <!--icofont-->
     <link rel="stylesheet" href="{{asset('icofont/icofont/icofont.min.css')}}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="icon" href="{{asset('/img/e-fav.png')}}">
-    
-   
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 
 </head>
 <body onload="preloaderFunction()">
     <div id="loading"></div>
 
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm p-3">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <img class="img-fluid logo" src="{{asset('/img/e-logo.png')}}" alt="E-report">
@@ -55,13 +54,13 @@
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item mr-4">
-                                    <a  class="nav-link text-success" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                    <a class="nav-link text-success" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 </li>
                             @endif
                             
                             @if (Route::has('register'))
-                                <li class="nav-item ml-2">
-                                    <a id="nav-btn" class="nav-link btn btn-success" href="{{ route('register') }}">{{ __('Get Started') }}</a>
+                                <li class="nav-item ml-2" >
+                                    <a id="nav-btn" class="nav-link" href="{{ route('register') }}">{{ __('Get Started') }}</a>
                                 </li>
                             @endif
                         @else
@@ -81,6 +80,12 @@
                                     <a class="dropdown-item" href="{{ route('students_list') }}">
                                         Students List
                                     </a>
+
+                                    <a class="dropdown-item" href="{{ route('edit-user-profile', Auth::user()->id) }}">
+                                        Edit my Profile
+                                    </a>
+                                    
+                                   
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -97,6 +102,7 @@
                 </div>
             </div>
         </nav>
+
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -108,10 +114,10 @@
                 <img src="{{asset('./img/e-banner.jpg')}}" class="d-block w-100" alt="E-report">
               </div>
               <div class="carousel-item">
-                <img src="{{asset('./img/slider.jpg')}}" class="d-block w-100" alt="E-report">
+                <img src="{{asset('./img/e-banner.jpg')}}" class="d-block w-100" alt="E-report">
               </div>
               <div class="carousel-item">
-                <img src="{{asset('./img/slider.jpg')}}" class="d-block w-100" alt="E-report">
+                <img src="{{asset('./img/e-banner.jpg')}}" class="d-block w-100" alt="E-report">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -123,7 +129,7 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-        <div class="section-one"  data-aos="fade-up" data-aos-duration="3000">
+        <div class="section-one" data-aos="fade-up">
             <div class="container ">
                 <div class="row justify-content-center">
                     <div class="col-md-6">
@@ -140,7 +146,7 @@
             </div>
         </div>
         <div class="section-two">
-            <img class="img-fluid" src="{{asset('./img/gmail.jpg')}}" alt="E-report">
+            <img class="img-fluid" src="{{asset('./img/email-2.jpg')}}" alt="E-report">
         </div>
         <div class="section-three">
             <div class="container-fluid">
@@ -232,10 +238,8 @@
             @endphp</p>
         </footer>
     </div>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
+
+
 <script>
     var preloader = document.getElementById('loading');
 
@@ -243,6 +247,9 @@
         preloader.style.display = 'none';
 
     }
+</script>
+<script>
+    AOS.init();
 </script>
 </body>
 </html>
