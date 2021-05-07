@@ -131,16 +131,19 @@
           </div>
         <div class="section-one" data-aos="fade-up">
             <div class="container ">
-                <div class="row justify-content-center">
+                <div class="row ">
                     <div class="col-md-6">
                         <h1 id="h1" class="text-center">Send students report electronically</h1>
-                        <p class="text-center mt-2 line-h">E-report helps parents track their ward's academic progress digitally. No more use of the analog way of recieving reports. 
+                        <p class="text-center mt-2 line-h text-secondary">E-report helps parents track their ward's academic progress digitally. No more use of the analog way of recieving reports. 
                             Its a new era of recieving your ward's report electronically from the comfort of your mobile device. This process also reduces the cost of teachers printing out results(reports) and issuing to students.
                             E-report is open for all Schools and institution.
                         </p>
                         <div class="mt-3">
                             <a style="width: 50%;" id="nav-btn" class="btn btn-info mx-auto d-block" href="{{route('register')}}">Get Started Now</a>
                         </div>
+                    </div>
+                    <div class="col-md-6">
+                        
                     </div>
                 </div>
             </div>
@@ -158,7 +161,7 @@
                                 <img class="img-fluid" src="{{asset('./img/register-student.png')}}" alt="E-report">
                                 <div class="card-body">
                                     <h5 class="card-title"><b>Signup students as a teacher/school</b></h5>
-                                    <p class="card-text">
+                                    <p class="card-text text-secondary">
                                         After Succesful registration as a teacher, you can easily register your students.
                                          Data like Student Name, Class, Gender, Age, Parent Name, Parent Email Address will be required when registering a new Student. 
                                     </p>
@@ -170,7 +173,7 @@
                                 <img class="img-fluid" src="{{asset('./img/student-list.png')}}" alt="E-report">
                                 <div class="card-body">
                                     <h5 class="card-title"><b>Manage registered students with ease</b></h5>
-                                    <p class="card-text">
+                                    <p class="card-text text-secondary">
                                         As a Teacher registered on e-report, you can manage your  Students easily. Features are available for Updating and Deletion of Student Data.
                                     </p>
                                 </div>
@@ -189,7 +192,7 @@
                                 <img class="img-fluid" src="{{asset('./img/send-report.png')}}" alt="E-report">
                                 <div class="card-body">
                                     <h5 class="card-title"><b>send report to parent's mail on a single click</b></h5>
-                                    <p class="card-text">
+                                    <p class="card-text text-secondary">
                                         As a teacher, you can send reports to each of your registered student's  parent individually, Attach report files and add a backup message for parents.
                                         Parents will be able to recieve reports in their mail boxes. 
                                     </p>
@@ -201,7 +204,7 @@
                                 <img class="img-fluid" src="{{asset('./img/parent-mail.png')}}" alt="E-report">
                                 <div class="card-body">
                                     <h5 class="card-title"><b>Parents will recieve report in their email in no time</b></h5>
-                                    <p class="card-text">
+                                    <p class="card-text text-secondary">
                                         Parents will be able to recieve reports from school teachers from the comfort of thier mobile devices or computers through their Email Addresses (Mail Boxes)
                                         and they will be able to track their ward's academic progress with ease.
                                     </p>

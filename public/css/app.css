@@ -10957,6 +10957,9 @@ a.text-dark:focus {
     width: auto;
     padding: 10px;
   }
+  .card{
+    text-align: center;
+  }
 }
 .section-one{
   height: auto;
