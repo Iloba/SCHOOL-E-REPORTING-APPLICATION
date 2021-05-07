@@ -111,7 +111,7 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="{{asset('./img/e-banner.jpg')}}" class="d-block w-100" alt="E-report">
+                <img src="{{asset('./img/e-banner2.jpg')}}" class="d-block w-100" alt="E-report">
               </div>
               <div class="carousel-item">
                 <img src="{{asset('./img/e-banner.jpg')}}" class="d-block w-100" alt="E-report">
