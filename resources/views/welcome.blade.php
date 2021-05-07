@@ -103,7 +103,7 @@
             </div>
         </nav>
 
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -150,6 +150,7 @@
         </div>
         <div class="section-three">
             <div class="container-fluid">
+                <h1 class="text-center mb-2">Easy to Use</h1>
                 <div class="container">
                     <div class="row mt-3">
                         <div class="col-md-6">
@@ -211,19 +212,19 @@
                 </div>
             </div>
         </div>
-        {{-- <div class="section-four">
+        <div class="section-four">
            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-10">
-                        <img id="logo-down" class="img-fluid mx-auto d-block" src="{{asset('./img/e-logo.png')}}" alt="E-report">
-                        <h1 id="h1" class="text-center mt-3">Get started with e-report</h1>
-                        <div class="mt-3">
-                            <a id="nav-btn" class="btn btn-info mx-auto d-block" href="{{route('register')}}">Create an Account</a>
-                        </div>
-                    </div>
+               <h2 class="text-center ">School Support System</h2>
+                <div class="row">
+                   <div class="col-md-12">
+                    <p class="text-center text-secondary">
+                        E-report is a support system open to use for Schools, institutions and Higher institutions.
+                        
+                    </p>
+                   </div>
                 </div>
            </div>
-        </div> --}}
+        </div>
         <footer class="justify-content-center shadow">
             <a href="/"><img class="footer-logo img-fluid mx-auto d-block mb-2" src="{{asset('./img/e-logo.png')}}" alt="E-report"></a>
             

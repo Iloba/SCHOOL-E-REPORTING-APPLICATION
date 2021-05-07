@@ -2128,7 +2128,7 @@ pre code {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #38c172;
-  border-radius: 0rem;
+  border-radius: 0px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -10949,6 +10949,14 @@ a.text-dark:focus {
     margin-bottom: 15px;
     width: 100%;
   }
+  #nav-btn{
+    border-radius:0px;
+    background-color: #006600;
+    color: #fff;
+    border: 2px solid green;
+    width: auto;
+    padding: 10px;
+  }
 }
 .section-one{
   height: auto;
@@ -10964,8 +10972,7 @@ a.text-dark:focus {
   background-color: rgb(241, 241, 241);
 }
 .section-four{
-  margin: 100px;
-  padding: 100px;
+  padding: 50px;
 }
 #logo-down{
   width:170px;
