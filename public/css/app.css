@@ -10949,6 +10949,11 @@ a.text-dark:focus {
     margin-bottom: 15px;
     width: 100%;
   }
+  .col-md-6{
+    margin-bottom: 15px;
+    width: 100%;
+
+  }
   #nav-btn{
     border-radius:0px;
     background-color: #006600;

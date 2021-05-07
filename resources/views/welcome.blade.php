@@ -143,12 +143,15 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        
+                        <img class="img-fluid" src="{{asset('./img/sec1.jpg')}}" alt="E-report">
                     </div>
                 </div>
             </div>
         </div>
         <div class="section-two">
+            <div>
+                <h1 class="text-center">Easy to use</h1>
+            </div>
             <img class="img-fluid" src="{{asset('./img/email-2.jpg')}}" alt="E-report">
         </div>
         <div class="section-three">
