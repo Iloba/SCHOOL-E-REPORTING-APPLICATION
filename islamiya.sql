@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 04, 2021 at 11:00 AM
+-- Generation Time: May 08, 2021 at 09:25 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -94,14 +94,6 @@ CREATE TABLE `students` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Dumping data for table `students`
---
-
-INSERT INTO `students` (`id`, `user_id`, `name`, `gender`, `school`, `passport_photograph`, `class`, `age`, `Guardian_name`, `Guardian_email`, `report`, `report_file`, `created_at`, `updated_at`) VALUES
-(1, 1, 'Delightsome Anwoh', 'Male', 'Victory Model School Kaduna', '1605095891_Passport.jpg', 'Primary 4', 8, 'Mr Paul Anwoh', 'scarlettsney@gmail.com', 'This is your Son\'s Report', 'Delightsome Anwoh_report_file.pdf', '2021-05-04 07:20:33', '2021-05-04 07:39:45'),
-(3, 1, 'Musa Musa', 'Male', 'SMC KAWO', 'Musa Musa_Passport.jpg', 'Nursery 3', 18, 'Mr. Paul Anwoh', 'ilobatimothy@gmail.com', 'nmbn', 'Musa Musa_report_file.docx', '2021-05-04 07:45:01', '2021-05-04 07:56:54');
-
 -- --------------------------------------------------------
 
 --
@@ -119,13 +111,6 @@ CREATE TABLE `users` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `avatar`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Emeka Iloba', 'scarlettsney@gmail.com', NULL, NULL, '$2y$10$M7lhpKsPBiUquG6pP0RePuYdDVz3I/HdnYgY2YclbVvSbqClch5ku', NULL, '2021-05-04 07:19:47', '2021-05-04 07:19:47');
 
 --
 -- Indexes for dumped tables
@@ -184,13 +169,13 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `students`
 --
 ALTER TABLE `students`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- Constraints for dumped tables
