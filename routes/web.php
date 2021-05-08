@@ -33,7 +33,7 @@ Route::match(['Get', 'Post'], '/home/register', [StudentController::class, 'stor
 
 
 //Edit User Profile
-Route::get('/home/{id}/edit', [HomeController::class, 'edit'])->name('edit-user-profile');
+Route::get('/home/{id}/edit', [HomeController::class, 'edit'])->name('edit-user-profile')->middleware(['auth', 'password.confirm']);
 
 //Update User Profile
 Route::post('/home/{id}/update', [HomeController::class, 'update'])->name('update-user');

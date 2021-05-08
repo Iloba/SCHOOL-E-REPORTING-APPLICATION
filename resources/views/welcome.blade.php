@@ -166,7 +166,7 @@
                                     <h5 class="card-title"><b>Signup students as a teacher/school</b></h5>
                                     <p class="card-text text-secondary">
                                         After Succesful registration as a teacher, you can easily register your students.
-                                         Data like Student Name, Class, Gender, Age, Parent Name, Parent Email Address will be required when registering a new Student. 
+                                         Data comprising of Student Name, Class, Gender, Age, Parent Name, Parent Email Address will be required when registering a new Student. 
                                     </p>
                                 </div>
                             </div>
@@ -177,7 +177,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title"><b>Manage registered students with ease</b></h5>
                                     <p class="card-text text-secondary">
-                                        As a Teacher registered on e-report, you can manage your  Students easily. Features are available for Updating and Deletion of Student Data.
+                                        As a Teacher, registered on e-report, you can manage your  Students easily. Features are available for Updating and Deletion of Student Data.
                                     </p>
                                 </div>
                             </div>
@@ -240,9 +240,9 @@
                <a target="_blank" class="nav-link text-secondary" href="#"> <i class="icofont-instagram"></i></a>
                <a target="_blank" class="nav-link text-secondary" href="#"> <i class="icofont-linkedin"></i></a>
             </div>
-            <p class="text-center mt-2">&copy; e-report @php
-                echo date('Y');
-            @endphp</p>
+            <p class="text-center mt-2">&copy; e-report  @php
+                echo date('Y'); 
+            @endphp @bellonix integrated technologies</p>
         </footer>
     </div>
 
