@@ -10965,6 +10965,10 @@ a.text-dark:focus {
   .card{
     text-align: center;
   }
+  .col-md-8{
+    text-align: center;
+    margin-bottom: 10px;
+  }
 }
 .section-one{
   height: auto;
