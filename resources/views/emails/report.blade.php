@@ -11,8 +11,9 @@
         <div class="row">
             <div class="col-md-6">
                 <img style="padding: 10px;" width="20%" src="{{$message->embed('./storage/students_passports/'.$stud->passport_photograph)}}" alt="{{$stud->name}}">
-                <embed src="{{$message->embed('./storage/report-files/'.$stud->report_file)}}" width="500" height="375" 
-                type="application/pdf">
+                <object  type="application/pdf" data="{{$message->embed('./storage/report-files/'.$stud->report_file)}}" src="" width="500" height="375" 
+                    alt : <a href="{{$message->embed('./storage/report-files/'.$stud->report_file)}}">test.pdf</a>
+               > </object>
             </div>
             <div class="col-md-6">
                 <div class="card">
