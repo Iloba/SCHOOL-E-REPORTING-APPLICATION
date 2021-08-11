@@ -49,7 +49,7 @@ class reportController extends Controller
 
            
             //Store
-            $request->report_file->storeAs('report-files', $prefixedName, 'public');
+            $request->report_file->storeAs('report-files', $prefixedName, 'public_uploads');
 
             //Check if Upload is Successful
         }

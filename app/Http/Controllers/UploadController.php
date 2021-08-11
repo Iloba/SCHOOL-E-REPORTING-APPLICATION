@@ -46,7 +46,7 @@ class UploadController extends Controller
         // dd($prefixedName);
 
         //Store the Uploaded Image (Store in the Passports Folder with the Original Name and in the Public Disk)
-        $req->passport->storeAs('passports', $prefixedName, 'public');
+        $req->passport->storeAs('passports', $prefixedName, 'public_uploads');
 
         //Update the User's Profile Photo
         auth::user()->update(['avatar' => $prefixedName]);

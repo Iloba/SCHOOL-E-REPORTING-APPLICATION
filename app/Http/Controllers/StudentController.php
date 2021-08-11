@@ -75,7 +75,7 @@ class StudentController extends Controller
             $prefixedName = $request->student_name.'_Passport.'.$extension;
 
             //Store the Image
-            $request->student_passport->storeAs('students_passports', $prefixedName, 'public');
+            $request->student_passport->storeAs('students_passports', $prefixedName, 'public_uploads');
 
             
         }
@@ -186,7 +186,7 @@ class StudentController extends Controller
             $prefixedName = $request->student_name.'_Passport.'.$extension;
 
             //Store the Image
-            $request->student_passport->storeAs('students_passports', $prefixedName, 'public');
+            $request->student_passport->storeAs('students_passports', $prefixedName, 'public_uploads');
 
             
         }
