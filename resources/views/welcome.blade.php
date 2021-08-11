@@ -8,21 +8,21 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="icon" href="{{asset('/img/e-fav.png')}}">
+    <link rel="icon" href="/img/e-fav.png">
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="js/app.js" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
 
     <!--icofont-->
-    <link rel="stylesheet" href="{{asset('icofont/icofont/icofont.min.css')}}">
+    <link rel="stylesheet" href="icofont/icofont/icofont.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -33,7 +33,7 @@
     <div id="loading"></div>
 
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm py-3">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <img class="img-fluid logo" src="{{asset('/img/e-logo.png')}}" alt="E-report">
@@ -129,20 +129,20 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-        <div class="section-one" data-aos="fade-up">
-            <div class="container ">
-                <div class="row ">
-                    <div class="col-md-6">
+        <div class="section-one  mt-3 mb-3" data-aos="fade-up">
+            <div class="container p-5">
+                <div class="row">
+                    <div class="col-md-6 p-5">
                         <h1 id="h1" class="text-center">Send students report electronically</h1>
                         <p class="text-center mt-2 line-h text-secondary">E-report helps parents track their ward's academic progress digitally. No more use of the analog way of recieving reports. 
                             Its a new era of recieving your ward's report electronically from the comfort of your mobile device. This process also reduces the cost of teachers printing out results(reports) and issuing to students.
                             E-report is open for all Schools and institution.
                         </p>
-                        <div class="mt-3">
+                        <div class="mt-3 mb-3">
                             <a style="width: 50%;" id="nav-btn" class="btn btn-info mx-auto d-block" href="{{route('register')}}">Get Started Now</a>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 p-5">
                         <img class="img-fluid" src="{{asset('./img/sec1.jpg')}}" alt="E-report">
                     </div>
                 </div>
@@ -150,14 +150,14 @@
         </div>
         <div class="section-two">
             <div>
-                <h1 class="text-center">Easy to use</h1>
+                <img class="img-fluid" src="{{asset('./img/email-2.jpg')}}" alt="E-report">
             </div>
-            <img class="img-fluid" src="{{asset('./img/email-2.jpg')}}" alt="E-report">
+            
         </div>
-        <div class="section-three">
-            <div class="container-fluid">
-                <h1 class="text-center mb-2">Get started with ease</h1>
-                <div class="container">
+        <div class="section-three  bg-light">
+            <div class="container-fluid p-5">
+                <h1 class="text-center mb-3">Get started with ease</h1>
+                <div class="container mb-2">
                     <div class="row mt-3">
                         <div class="col-md-6">
                             <div class="card shadow">
@@ -184,10 +184,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="section-three">
-            <div class="container-fluid">
                 <div class="container">
                     <div class="row mt-3">
                         <div class="col-md-6">
@@ -218,8 +214,9 @@
                 </div>
             </div>
         </div>
+        
         <div class="section-four">
-           <div class="container">
+           <div class="container p-5">
                <h2 class="text-center ">School Support System</h2>
                 <div class="row">
                    <div class="col-md-12">

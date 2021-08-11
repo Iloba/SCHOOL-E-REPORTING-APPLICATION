@@ -10940,7 +10940,7 @@ a.text-dark:focus {
   }
   .section-four{
     margin: 10px;
-    padding: 10px;
+    /* padding: 10px; */
   }
   #logo-down{
     width: 170px;
@@ -10969,22 +10969,26 @@ a.text-dark:focus {
     text-align: center;
     margin-bottom: 10px;
   }
+  .section-one{
+    padding: 1rem;
+  }
+ 
 }
 .section-one{
   height: auto;
-  padding: 80px;
+  /* padding: 80px; */
   font-family: "Nunito", sans-serif;
 }
 .section-two{
   font-family: "Nunito", sans-serif;
-  padding: 40px;
+  /* padding: 40px; */
 }
 .section-three{
-  padding: 30px;
+  /* padding: 30px; */
   background-color: rgb(241, 241, 241);
 }
 .section-four{
-  padding: 50px;
+  /* padding: 50px; */
 }
 #logo-down{
   width:170px;
@@ -11036,4 +11040,21 @@ ul li{
   background: #fff
   url('../img/loading.gif') no-repeat center;
   z-index: 99999;
+}
+@media(max-width: 600px){
+  .p-5{
+    padding: 1rem !important;
+  }
+  .container{
+    padding: 1rem !important;
+  }
+  .section-three .p-5{
+    padding: 1rem !important;
+  }
+  .section-four .p-5{
+    padding: 1rem !important;
+  }
+  .row .p-5{
+    padding: 1rem !important;
+  }
 }
