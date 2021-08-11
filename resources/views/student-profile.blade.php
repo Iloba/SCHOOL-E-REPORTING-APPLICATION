@@ -15,7 +15,7 @@
                         <div class="container">   
                             <div class="row">
                             <div class="col-md-4">
-                                <img style=" border: 5px solid #6cb2eb;" class="img-fluid mr-2" style="height: 200px;" src="{{asset('/storage/students_passports/'.$student_data->passport_photograph)}}" alt="Profile Photo">
+                                <img style=" border: 5px solid #6cb2eb;" class="img-fluid mr-2" style="height: 200px;" src="{{asset('/uploads/students_passports/'.$student_data->passport_photograph)}}" alt="Profile Photo">
                             </div>
                             <div class="col-md-8 p-1">
                                 <h5><b>Name:</b> {{$student_data->name}}</h5>

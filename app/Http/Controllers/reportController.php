@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 //Bring in our Model
-use App\Models\Student;
+use Exception;
 
+use App\Models\Student;
+use App\Mail\ReportMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
-use App\Mail\ReportMail;
 
 
 class reportController extends Controller
@@ -77,9 +78,16 @@ class reportController extends Controller
        
     
         //Send to Parents Email
-        Mail::to($parent_email)->send(new ReportMail(['students' => $student]));
+        try {
+            Mail::to($parent_email)->send(new ReportMail(['students' => $student]));
+            return redirect()->back()->with('status', 'Operation Successful, Report Sent to Parent Email Address ');
+            
+        } catch (Exception $error) {
+            return back()->with('error', 'Something went wrong, could NOT send email please try again');
+        }
+       
 
-        return redirect()->back()->with('status', 'Operation Successful, Report Sent to Parent Email Address ');
+       
         
     }
 }

@@ -13,17 +13,17 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="js/app.js" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="css/app.css" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
 
     <!--icofont-->
-    <link rel="stylesheet" href="icofont/icofont/icofont.min.css">
+    <link rel="stylesheet" href="/icofont/icofont/icofont.min.css">
 
     <link rel="icon" href="{{asset('/img/e-fav.png')}}">
 </head>
@@ -66,7 +66,7 @@
 
                                     @if (Auth::user()->avatar)
 
-                                    <img width="40" class="img-fluid rounded-circle" src="{{asset('storage/passports/'.Auth::user()->avatar)}}" alt="Avatar">
+                                    <img width="40" class="img-fluid rounded-circle" src="{{asset('uploads/passports/'.Auth::user()->avatar)}}" alt="Avatar">
                                 
                                     @endif
 
