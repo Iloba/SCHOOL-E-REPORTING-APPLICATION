@@ -20,16 +20,16 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
 
     <!--icofont-->
-    <link rel="stylesheet" href="{{asset('icofont/icofont/icofont.min.css')}}">
+    <link rel="stylesheet" href="icofont/icofont/icofont.min.css">
 
     <link rel="icon" href="{{asset('/img/e-fav.png')}}">
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm py-3">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <img class="img-fluid logo" src="{{asset('/img/e-logo.png')}}" alt="E-report">

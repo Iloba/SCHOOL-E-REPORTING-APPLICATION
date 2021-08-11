@@ -7,7 +7,7 @@
             <div class="card shadow">
                 <div class="card-header">
                     <div>
-                        <h3 class="text-center mt-2"><i style="font-size: 40px; color: #38c172;" class="icofont-ui-user"></i></h3>
+                        <h3 class="text-center mt-2"><i style="font-size: 30px; color: #38c172;" class="icofont-ui-user"></i></h3>
                     </div>
                     <img width="36%;" class="img-fluid mx-auto d-block pt-2" src="{{asset('./img/e-logo.png')}}" alt="E-report">
                    
