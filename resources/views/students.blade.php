@@ -16,7 +16,7 @@
                        <div>
                           <ol>
                             @if (count($students) > 0)
-                             <h3 class="pb-3">Registered Students</h3>
+                             <h3 class="mb-3">Registered Students</h3>
                                 @foreach ($students as $student)
                                 <div style="display: flex;" class="p-2  justify-content-between">
                                 <div> 

@@ -65,11 +65,11 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
+                                    {{-- {{ Auth::user()->name }} --}}
 
                                     @if (Auth::user()->avatar)
 
-                                    <img width="40" class="img-fluid rounded-circle" src="{{asset('storage/passports/'.Auth::user()->avatar)}}" alt="Avatar">
+                                    <img width="40" class="img-fluid rounded-circle" src="{{asset('uploads/passports/'.Auth::user()->avatar)}}" alt="Avatar">
                                 
                                     @endif
 

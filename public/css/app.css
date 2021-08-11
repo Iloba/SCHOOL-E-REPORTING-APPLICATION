@@ -10918,9 +10918,8 @@ a.text-dark:focus {
 #nav-btn:hover{
   background-color: rgb(3, 92, 3);
   color: #fff;
-  padding: 10px;
   border: 2px solid #fff;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
   box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
 -webkit-box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
@@ -11055,6 +11054,18 @@ ul li{
     padding: 1rem !important;
   }
   .row .p-5{
+    padding: 1rem !important;
+  }
+  .card-body .p-4{
+    padding: 1rem !important;
+  }
+  .card .card-body .p-4{
+    padding: 1rem !important;
+  }
+  .col-md-8{
+    padding: 1rem !important;
+  }
+  .p-4{
     padding: 1rem !important;
   }
 }

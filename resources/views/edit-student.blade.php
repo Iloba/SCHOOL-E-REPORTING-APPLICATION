@@ -4,10 +4,12 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
+           
             <div class="card">
                 <div class="card-header"><a href="{{route('home')}}">{{ __('Dashboard') }}</a> | {{ __('Welcome Admin, You are logged in!') }}</div>
-
-                <div class="card-body">     
+                
+                <div class="card-body"> 
+                    <a class="btn btn-primary mb-5" href="{{route('home')}}"><i class="icofont-arrow-left"></i></a>    
                         @include('layouts.message')
                     @foreach ($students_data as $student)
                     <div class="p-4">

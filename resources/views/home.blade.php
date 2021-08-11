@@ -16,7 +16,7 @@
                             <form action="/upload" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <div>
-                                    <input type="file" name="passport" > 
+                                    <input type="file" class="form-control mb-3" name="passport" > 
                                 <input type="submit" value="Upload" class="btn btn-info">
                                 </div>
                             </form>
