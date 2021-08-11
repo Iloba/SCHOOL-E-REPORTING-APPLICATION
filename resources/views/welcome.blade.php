@@ -24,8 +24,7 @@
     <!--icofont-->
     <link rel="stylesheet" href="icofont/icofont/icofont.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 
 </head>
@@ -129,7 +128,7 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-        <div class="section-one  mt-3 mb-3" data-aos="fade-up">
+        <div class="section-one  mt-3 mb-3" data-aos="zoom-in" data-aos-duration="3000">
             <div class="container p-5">
                 <div class="row">
                     <div class="col-md-6 p-5">
@@ -148,13 +147,15 @@
                 </div>
             </div>
         </div>
-        <div class="section-two">
+        <div class="section-two" data-aos="fade-up"
+        data-aos-duration="3000">
             <div>
                 <img class="img-fluid" src="{{asset('./img/email-2.jpg')}}" alt="E-report">
             </div>
             
         </div>
-        <div class="section-three  bg-light">
+        <div class="section-three " data-aos="flip-left"
+        data-aos-duration="3000">
             <div class="container-fluid p-5">
                 <h1 class="text-center mb-3">Get started with ease</h1>
                 <div class="container mb-2">
@@ -252,8 +253,12 @@
 
     }
 </script>
-<script>
-    AOS.init();
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+         AOS.init();
+    });
 </script>
 </body>
 </html>
